@@ -50,7 +50,6 @@
 
     At this point, you should have two uncompressed binary directories in /usr/local/java for the Java JDK/JRE listed as:
     jdk1.7.0_60
-    jre1.7.0_60
 **Edit the system PATH file /etc/profile and add the following system variables to your system path. Use nano, gedit or any other text editor, as root, open up /etc/profile**
 > `sudo gedit /etc/profile`
 >or
