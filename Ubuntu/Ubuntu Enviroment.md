@@ -49,15 +49,15 @@
 > `sudo tar xvzf jdk-8u5-linux-x64.tar.gz`
 
     At this point, you should have two uncompressed binary directories in /usr/local/java for the Java JDK/JRE listed as:
-    jdk1.8.0_05
-    jre1.8.0_05
+    jdk1.7.0_60
+    jre1.7.0_60
 **Edit the system PATH file /etc/profile and add the following system variables to your system path. Use nano, gedit or any other text editor, as root, open up /etc/profile**
 > `sudo gedit /etc/profile`
 >or
 > `sudo nano /etc/profile`
 
 **Scroll down to the end of the file using your arrow keys and add the following lines below to the end of your /etc/profile file:**
-> `JAVA_HOME=/usr/local/java/jdk1.8.0_05`
+> `JAVA_HOME=/usr/local/java/jdk1.7.0_60`
 > `PATH=$PATH:$HOME/bin:$JAVA_HOME/bin`
 > `export JAVA_HOME`
 > `export PATH`
@@ -65,24 +65,24 @@
     Save the /etc/profile file and exit.
 
 **Inform your Ubuntu Linux system where your Oracle Java JDK/JRE is located. This will tell the system that the new Oracle Java version is available for use.**
-> `sudo update-alternatives --install "/usr/bin/java" "java" "/usr/local/java/jdk1.8.0_05/bin/java" 1`
+> `sudo update-alternatives --install "/usr/bin/java" "java" "/usr/local/java/jdk1.7.0_60/bin/java" 1`
     
     this command notifies the system that Oracle Java JRE is available for use
-> `sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/local/java/jdk1.8.0_05/bin/javac" 1`
+> `sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/local/java/jdk1.7.0_60/bin/javac" 1`
 
     this command notifies the system that Oracle Java JDK is available for use
-> `sudo update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/local/java/jdk1.8.0_05/bin/javaws" 1`
+> `sudo update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/local/java/jdk1.7.0_60/bin/javaws" 1`
 
     this command notifies the system that Oracle Java Web start is available for use
     
 **Inform your Ubuntu Linux system that Oracle Java JDK/JRE must be the default Java.**
-> `sudo update-alternatives --set java /usr/local/java/jdk1.8.0_05/bin/java`
+> `sudo update-alternatives --set java /usr/local/java/jdk1.7.0_60/bin/java`
 
     this command will set the java runtime environment for the system
-> `sudo update-alternatives --set javac /usr/local/java/jdk1.8.0_05/bin/javac`
+> `sudo update-alternatives --set javac /usr/local/java/jdk1.7.0_60/bin/javac`
 
     this command will set the javac compiler for the system
-> `sudo update-alternatives --set javaws /usr/local/java/jdk1.8.0_05/bin/javaws`
+> `sudo update-alternatives --set javaws /usr/local/java/jdk1.7.0_60/bin/javaws`
 
     this command will set Java Web start for the system
 
